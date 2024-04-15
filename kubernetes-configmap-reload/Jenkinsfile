@@ -8,7 +8,7 @@ pipeline {
     string(name: 'ImageName', description: "Name of the docker build", defaultValue: "kubernetes-configmap-reload")
 	string(name: 'ImageTag', description: "Name of the docker build",defaultValue: "v1")
 	string(name: 'AppName', description: "Name of the Application",defaultValue: "kubernetes-configmap-reload")
-    string(name: 'docker_repo', description: "Name of docker repository",defaultValue: "vignan91")
+    string(name: 'docker_repo', description: "Name of docker repository",defaultValue: "ramyachegu")
   }
       
   tools{ 
@@ -22,7 +22,7 @@ pipeline {
             steps {
                 gitCheckout(
                     branch: "main",
-                    url: "https://github.com/vickydevo/spring-clud-k8s-sing.git"
+                    url: "https://github.com/hemanthkumar-git/spring-clud-k8s-sing.git"
                 )
             }
         }
